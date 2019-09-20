@@ -7,13 +7,16 @@
 //
 //
 
+import Foundation
 import UIKit
 import CoreData
 
 @objc(Document)
 public class Document: NSManagedObject {
+    
     convenience init?(name: String?, textArea: String?) {
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        
         guard let managedContext = appDelegate?.persistentContainer.viewContext else {
             return nil
         }

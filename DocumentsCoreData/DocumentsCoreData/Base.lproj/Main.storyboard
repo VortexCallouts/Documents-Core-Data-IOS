@@ -57,7 +57,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="5Gi-JJ-aVI">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="lFg-Bt-eaN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lFg-Bt-eaN">
                             <connections>
                                 <segue destination="che-qF-9EM" kind="show" id="sgv-iZ-v5h"/>
                             </connections>
@@ -89,7 +89,7 @@
         <!--Single Notes ViewController-->
         <scene sceneID="e1K-Pq-Mdq">
             <objects>
-                <viewController title="Single Notes ViewController" id="che-qF-9EM" sceneMemberID="viewController">
+                <viewController title="Single Notes ViewController" id="che-qF-9EM" customClass="SingleNotesViewController" customModule="DocumentsCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FKE-O8-GjW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,6 +107,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameTextField:" destination="kbc-CM-nKG" eventType="editingDidEnd" id="4Th-yh-QIR"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xUj-NW-RCT">
                                 <rect key="frame" x="32" y="173" width="336" height="351"/>
@@ -120,9 +123,21 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="9ey-Ii-Pol"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5Bs-g2-RM6"/>
+                    <navigationItem key="navigationItem" id="5Bs-g2-RM6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="DWB-E0-6i4">
+                            <connections>
+                                <action selector="saveNote:" destination="che-qF-9EM" id="06r-ri-arF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="fU2-gM-mTF" id="9SQ-E8-ogv"/>
+                        <outlet property="noteTextArea" destination="xUj-NW-RCT" id="T4y-h9-ax8"/>
+                        <outlet property="saveNote" destination="DWB-E0-6i4" id="3ed-fq-V1r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cd5-E9-bUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kbc-CM-nKG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1863.7681159420292" y="-190.17857142857142"/>
         </scene>

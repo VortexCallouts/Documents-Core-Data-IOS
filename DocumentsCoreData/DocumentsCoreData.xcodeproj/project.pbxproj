@@ -17,6 +17,7 @@
 		4D57A03F2333F00700615C9F /* DocumentsCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57A03E2333F00700615C9F /* DocumentsCoreDataUITests.swift */; };
 		4D57A04E2333F1D600615C9F /* Document+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57A04C2333F1D600615C9F /* Document+CoreDataClass.swift */; };
 		4D57A04F2333F1D600615C9F /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57A04D2333F1D600615C9F /* Document+CoreDataProperties.swift */; };
+		4D57A051233478A200615C9F /* SingleNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57A050233478A200615C9F /* SingleNotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4D57A0402333F00700615C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D57A04C2333F1D600615C9F /* Document+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4D57A04D2333F1D600615C9F /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4D57A050233478A200615C9F /* SingleNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				4D57A04D2333F1D600615C9F /* Document+CoreDataProperties.swift */,
 				4D57A01B2333F00600615C9F /* AppDelegate.swift */,
 				4D57A01D2333F00600615C9F /* ViewController.swift */,
+				4D57A050233478A200615C9F /* SingleNotesViewController.swift */,
 				4D57A01F2333F00600615C9F /* Main.storyboard */,
 				4D57A0252333F00700615C9F /* Assets.xcassets */,
 				4D57A0272333F00700615C9F /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D57A051233478A200615C9F /* SingleNotesViewController.swift in Sources */,
 				4D57A01E2333F00600615C9F /* ViewController.swift in Sources */,
 				4D57A04F2333F1D600615C9F /* Document+CoreDataProperties.swift in Sources */,
 				4D57A0242333F00600615C9F /* DocumentsCoreData.xcdatamodeld in Sources */,
