@@ -25,8 +25,10 @@ class SingleNotesViewController: UIViewController {
         
         if let note = Document(name: name, textArea: noteText) {
             do{
-                let managedContext = Document.
-                managedContext.save()
+                let managedContext = Document.managedObjectContext
+                try managedContext?.save()
+                
+                self.navigationController?.popViewController(animated: true)
             }
             catch{
                 print("Note Could Not Be Saved")
